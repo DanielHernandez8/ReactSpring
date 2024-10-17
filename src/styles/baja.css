@@ -1,0 +1,63 @@
+/* styles/baja.css */
+
+/* Estilo para el contenedor principal de la página */
+.baja-container {
+  display: flex; /* Usar flexbox para organización */
+  flex-direction: column; /* Organizar elementos en columna */
+  align-items: center; /* Centrar horizontalmente */
+  justify-content: center; /* Centrar verticalmente */
+  padding: 20px; /* Espaciado interno */
+  background-color: #f9f9f9; /* Color de fondo suave */
+  font-family: 'Arial', sans-serif; /* Fuente moderna */
+}
+
+/* Estilo para los campos de entrada */
+.baja-input {
+  width: 100%; /* Ancho completo del campo */
+  padding: 10px; /* Espaciado interno */
+  margin-bottom: 15px; /* Espaciado inferior entre campos */
+  border: 1px solid #dcdcdc; /* Color del borde */
+  border-radius: 5px; /* Bordes redondeados */
+  font-size: 1rem; /* Tamaño de fuente */
+}
+
+/* Estilo para el botón de eliminar */
+.baja-button {
+  background-color: #ff4c4c; /* Color de fondo rojo */
+  color: white; /* Color del texto */
+  border: none; /* Sin borde */
+  border-radius: 5px; /* Bordes redondeados */
+  padding: 10px 15px; /* Espaciado interno */
+  font-size: 1.2rem; /* Tamaño de fuente */
+  cursor: pointer; /* Cambiar cursor a mano */
+  transition: background-color 0.3s ease; /* Transición suave */
+}
+
+/* Efecto de hover para el botón */
+.baja-button:hover {
+  background-color: #d12b2b; /* Color más oscuro al hacer hover */
+}
+
+/* Estilo para enlaces */
+.baja-link {
+  margin-top: 10px; /* Espaciado superior */
+  color: #007BFF; /* Color azul para enlaces */
+  text-decoration: none; /* Sin subrayado */
+  font-size: 1rem; /* Tamaño de fuente */
+}
+
+/* Efecto de hover para el enlace */
+.baja-link:hover {
+  text-decoration: underline; /* Subrayar el enlace al hacer hover */
+}
+
+/* Estilo responsive para pantallas más pequeñas */
+@media (max-width: 600px) {
+  .baja-container {
+      padding: 15px; /* Ajustar el espaciado interno en pantallas pequeñas */
+  }
+
+  .baja-button {
+      font-size: 1rem; /* Ajustar el tamaño de fuente del botón */
+  }
+}

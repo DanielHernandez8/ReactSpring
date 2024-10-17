@@ -1,0 +1,75 @@
+/* styles/alta.css */
+
+/* Estilo para el contenedor principal del formulario */
+.alta-container {
+  display: flex; /* Usar flexbox para organización */
+  flex-direction: column; /* Organizar elementos en columna */
+  align-items: center; /* Centrar horizontalmente */
+  justify-content: center; /* Centrar verticalmente */
+  padding: 20px; /* Espaciado interno */
+  background-color: #f9f9f9; /* Color de fondo suave */
+  font-family: 'Arial', sans-serif; /* Fuente moderna */
+}
+
+/* Estilo para el título */
+.alta-title {
+  color: #2c3e50; /* Color oscuro para el texto */
+  font-size: 2.5rem; /* Tamaño del título */
+  margin-bottom: 20px; /* Espaciado inferior */
+}
+
+/* Estilo para el formulario */
+.alta-form {
+  background-color: #ffffff; /* Fondo blanco para el formulario */
+  border-radius: 10px; /* Bordes redondeados */
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1); /* Sombra suave */
+  padding: 20px; /* Espaciado interno */
+  width: 90%; /* Ancho del formulario */
+  max-width: 500px; /* Ancho máximo del formulario */
+}
+
+/* Estilo para los campos de entrada */
+.alta-input {
+  width: 100%; /* Ancho completo del campo */
+  padding: 10px; /* Espaciado interno */
+  margin-bottom: 15px; /* Espaciado inferior entre campos */
+  border: 1px solid #dcdcdc; /* Color del borde */
+  border-radius: 5px; /* Bordes redondeados */
+  font-size: 1rem; /* Tamaño de fuente */
+}
+
+/* Estilo para el botón de enviar */
+.alta-button {
+  background-color: #007BFF; /* Color de fondo azul */
+  color: white; /* Color del texto */
+  border: none; /* Sin borde */
+  border-radius: 5px; /* Bordes redondeados */
+  padding: 10px 15px; /* Espaciado interno */
+  font-size: 1.2rem; /* Tamaño de fuente */
+  cursor: pointer; /* Cambiar cursor a mano */
+  transition: background-color 0.3s ease; /* Transición suave */
+}
+
+/* Efecto de hover para el botón */
+.alta-button:hover {
+  background-color: #0056b3; /* Color más oscuro al hacer hover */
+}
+
+/* Estilo para mensajes de error */
+.alta-error {
+  color: red; /* Color rojo para mensajes de error */
+  font-size: 0.9rem; /* Tamaño de fuente más pequeño */
+  margin-top: -10px; /* Espaciado negativo para acercar al campo */
+  margin-bottom: 10px; /* Espaciado inferior */
+}
+
+/* Estilo responsive para pantallas más pequeñas */
+@media (max-width: 600px) {
+  .alta-title {
+      font-size: 2rem; /* Ajuste del tamaño de fuente del título */
+  }
+
+  .alta-button {
+      font-size: 1rem; /* Ajuste del tamaño de fuente del botón */
+  }
+}

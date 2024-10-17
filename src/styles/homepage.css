@@ -1,0 +1,56 @@
+/* styles/homepage.css */
+
+/* Estilo para el contenedor principal */
+.container {
+  display: flex; /* Usar flexbox para centrar contenido */
+  flex-direction: column; /* Alinear en columna */
+  align-items: center; /* Centrar horizontalmente */
+  justify-content: center; /* Centrar verticalmente */
+  height: 100vh; /* Altura completa de la vista */
+  background-color: #f8f9fa; /* Color de fondo suave */
+  font-family: 'Arial', sans-serif; /* Fuente moderna */
+}
+
+/* Estilo para el título */
+h3 {
+  color: #343a40; /* Color oscuro para el texto */
+  font-size: 2.5rem; /* Tamaño del título */
+  margin-bottom: 20px; /* Espaciado inferior */
+}
+
+/* Estilo para los enlaces */
+.link {
+  text-decoration: none;
+  color: #007BFF; /* Color azul para los enlaces */
+  margin: 0 15px; /* Espaciado entre enlaces */
+  font-size: 1.5rem; /* Tamaño del texto */
+  font-weight: 600; /* Peso de la fuente */
+  padding: 10px 20px; /* Espaciado interno */
+  border: 2px solid transparent; /* Border para el efecto de hover */
+  border-radius: 5px; /* Bordes redondeados */
+  transition: all 0.3s ease; /* Transición suave */
+}
+
+/* Cambia el color del enlace al pasar el ratón */
+.link:hover {
+  color: #fff; /* Color blanco al hacer hover */
+  background-color: #007BFF; /* Fondo azul */
+  border-color: #0056b3; /* Color del borde */
+}
+
+/* Estilo para el enlace al hacer clic */
+.link:active {
+  color: #FF6347; /* Cambia a un color rojo cuando se hace clic */
+  transform: scale(0.95); /* Efecto de pulsar al hacer clic */
+}
+
+/* Estilo responsive para pantallas más pequeñas */
+@media (max-width: 600px) {
+  h3 {
+      font-size: 2rem; /* Ajuste del tamaño de fuente del título */
+  }
+  .link {
+      font-size: 1.25rem; /* Ajuste del tamaño de fuente en pantallas pequeñas */
+      margin: 0 5px; /* Espaciado reducido */
+  }
+}
