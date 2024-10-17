@@ -6,12 +6,19 @@ import '../styles/alta.css'; // Importa el archivo de estilos
 const Alta = () => {
   const [name, setName] = useState();
   const [edad, setEdad] = useState();
+
+  const handleSubmit = () => {
+    savePersonName({ nombre: name, edad: edad });
+    
+    setName("");
+    setEdad("");
+  };
   
   return (
     <div className="alta-container">
-      <input type="text" onChange={e => setName(e.target.value)} placeholder="Nombre" />
-      <input type="text" onChange={e => setEdad(e.target.value)} placeholder="Edad" />
-      <button onClick={() => savePersonName({ nombre: name, edad: edad })}>Enviar</button>
+      <input type="text" onChange={e => setName(e.target.value)}  value={name} placeholder="Nombre" />
+      <input type="text" onChange={e => setEdad(e.target.value)} value={edad} placeholder="Edad" />
+      <button onClick={handleSubmit}>Enviar</button>
       <br />
       <Link to={"/"}>Home</Link>
     </div>
